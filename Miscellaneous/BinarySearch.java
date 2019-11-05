@@ -3,6 +3,7 @@ public class BinarySearch
     //Method to find particular elements in an array
     public static String method(int[]arr,int x)
     {
+        //initializing variable with starting and ending index of the Array
         int up = 0;
         int low = arr.length-1;
         while(low>=up)
@@ -10,6 +11,7 @@ public class BinarySearch
             int i = (low+up)/2;
             if(arr[i]==x)
             {
+                //Break out of loop if element if found
                 return "Found at index: "+i;
             }
             if(arr[i]>x)
@@ -22,8 +24,10 @@ public class BinarySearch
             }
         
         }
+        //Return not found if element is not found in the array
         return "Not found";
     }
+    //Main Method
     public static void main(String[]nah)
     {
         //Initialized integer array
